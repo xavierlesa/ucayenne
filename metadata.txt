@@ -1,0 +1,6 @@
+srctype = micropython-lib
+type = package
+version = 0.1.0
+author = Xavier Lesa
+desc = A very light clone of Cayenne-MQTT-Python for MicroPython.
+long_desc = README.md
