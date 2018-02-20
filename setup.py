@@ -3,6 +3,8 @@ sys.path.pop(0)
 from setuptools import setup
 sys.path.append("..")
 
+import sdist_upip
+
 from ucayenne import __version__
 
 setup(name='micropython-ucayenne',
@@ -13,9 +15,10 @@ setup(name='micropython-ucayenne',
       author='Xavier Lesa',
       author_email='xavierlesa@gmail.com',
       license="GPLv3+",
-      packages=["ucayenne"],
+      cmdclass={'sdist': sdist_upip.sdist},      
+      py_modules=["ucayenne"],
       install_requires=[
-          "umqtt.simple",
-          "umqtt.robust",
+          "micropython-umqtt.simple",
+          "micropython-umqtt.robust",
           ],
       )

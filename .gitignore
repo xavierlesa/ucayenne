@@ -102,3 +102,5 @@ ENV/
 
 # vim
 *.sw[op]
+# micropython dep
+sdist_upip.py
